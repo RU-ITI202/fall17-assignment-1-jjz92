@@ -1,0 +1,82 @@
+package booktester;
+
+
+public class bktt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Book example = new Book();
+		System.out.println("Title (should be 1984): " + example.getTitle()); /**creates book in inventory */ 
+		System.out.println("Borrowed? (should be false): " + example.isBorrowed());
+		example.rented();
+		System.out.println("Borrowed? (should be true): " +example.isBorrowed());
+		example.returned();
+		System.out.println("Borrowed? (should be false): " + example.isBorrowed());
+		example.changeTitle("The Girl with the Dragon Tattoo): " + example.getTitle);
+		System.out.println("Title (should be The Girl with the Dragon Tattoo): " + example.getTitle());/**creates another book in inventory*/
+		System.out.println("Borrowed? (should be false): " + example.isBorrowed());
+		example.rented();
+		System.out.println("Borrowed? (should be true): " +example.isBorrowed());
+		example.returned();
+		System.out.println("Borrowed? (should be false): " + example.isBorrowed());
+
+	}
+
+	private static int title(String string) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
+
+package booktester;
+
+public class Book {
+
+	public static final String getTitle = null;
+
+	public String getTitle() {
+		/** create string to get title*/
+		return null;
+	}
+
+	public String isBorrowed() {
+		/** create string to let user know the book is borrowed*/
+		return null;
+	}
+
+	public void rented() {
+		/** allows system to classify book as rented*/
+		
+	}
+
+	public void returned() {
+		/** allows system to classify book as returned*/
+		
+	}
+
+	public void changeTitle(String string) {
+		
+	}
+
+
+
+public void borrowBook(String bookName) {
+	for(Book book : book) {
+		if (book.getTitle().equals(bookName)) {
+			book.rented();
+		}
+	}
+ }
+public void returnBook(String bookName) {
+	for(Book book : book) {
+		if (book.getTitle().equals(bookName)) {
+			book.returned();
+
+		}
+		}
+}
+
+
